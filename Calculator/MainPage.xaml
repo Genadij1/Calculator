@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Calculator"
+             x:Class="Calculator.MainPage">
+    
+    <!--<Grid
+        ColumnDefinitions="*,*,*"
+        RowDefinitions="*,*,*"
+        >
+        
+        <FlexLayout
+                   Wrap="Wrap"
+                   AlignContent="Start"
+                   AlignItems="Start"
+                   Grid.ColumnSpan="2">
+
+            <Button BackgroundColor="LightGray" Text="Navy" TextColor="Navy" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Blue" TextColor="Blue" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Aqua" TextColor="Aqua" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Teal" TextColor="Teal" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Olive" TextColor="Olive" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Green" TextColor="Green" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Lime" TextColor="Lime" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Yellow" TextColor="Yellow" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Orange" TextColor="Orange" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Red" TextColor="Red" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Maroon" TextColor="Maroon" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Fuchsia" TextColor="Fuchsia" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Purple" TextColor="Purple" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Black" TextColor="Black" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Silver" TextColor="Silver" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="Gray" TextColor="Gray" HeightRequest="40" Margin="1"/>
+            <Button BackgroundColor="LightGray" Text="White" TextColor="White" HeightRequest="40" Margin="1"/>
+        </FlexLayout>
+    </Grid>-->
+
+
+    <StackLayout WidthRequest="250">
+        <Entry IsEnabled="False" x:Name="ENTRY" TextColor="Black">
+        </Entry>
+        <Entry IsEnabled="False" x:Name="RES" TextColor="Black">
+        </Entry>
+        <Grid Padding="10"
+              BackgroundColor="Gray" 
+              ColumnSpacing="10" ColumnDefinitions="50,50,50,50" 
+              RowSpacing="10" RowDefinitions="50,50,50,50,50"
+              >
+            <Button Grid.Row="0" Grid.Column="0" Text="CE" Background="Coral" Clicked="ClearAll_Clicked" ></Button>
+            <Button Grid.Row="0" Grid.Column="1" Text="C" Background="Coral" Clicked="Clear_Clicked" ></Button>
+            <Button Grid.Row="0" Grid.Column="2" Text="+/-" TextColor="Black" Background="White" Clicked="Button_Clicked" ></Button>
+            <Button Grid.Row="0" Grid.Column="3" Text="/" TextColor="black" Background="White" Clicked="Operator_Clicked" ></Button>
+            <Button Grid.Row="1" Grid.Column="0" Text="7" TextColor="black" Background="White" Clicked="Button_Clicked" ></Button>
+            <Button Grid.Row="1" Grid.Column="1" Text="8" TextColor="black" Background="White" Clicked="Button_Clicked" ></Button>
+            <Button Grid.Row="1" Grid.Column="2" Text="9" TextColor="black" Background="White" Clicked="Button_Clicked" ></Button>
+            <Button Grid.Row="1" Grid.Column="3" Text="*" TextColor="black" Background="White" Clicked="Operator_Clicked" ></Button>
+            <Button Grid.Row="2" Grid.Column="0" Text="4" TextColor="black" Background="White" Clicked="Button_Clicked" ></Button>
+            <Button Grid.Row="2" Grid.Column="1" Text="5" TextColor="black" Background="White" Clicked="Button_Clicked" ></Button>
+            <Button Grid.Row="2" Grid.Column="2" Text="6" TextColor="black" Background="White" Clicked="Button_Clicked" ></Button>
+            <Button Grid.Row="2" Grid.Column="3" Text="-" TextColor="black" Background="White" Clicked="Operator_Clicked" ></Button>
+            <Button Grid.Row="3" Grid.Column="0" Text="1" TextColor="black" Background="White" Clicked="Button_Clicked"></Button>
+            <Button Grid.Row="3" Grid.Column="1" Text="2" TextColor="black" Background="White" Clicked="Button_Clicked"></Button>
+            <Button Grid.Row="3" Grid.Column="2" Text="3" TextColor="black" Background="White" Clicked="Button_Clicked" ></Button>
+            <Button Grid.Row="3" Grid.Column="3" Text="+" TextColor="black" Background="White" Clicked="Operator_Clicked" ></Button>
+            <Button Grid.Row="4" Grid.Column="0" Text="0" TextColor="black" Background="White" Clicked="Button_Clicked"></Button>
+            <Button Grid.Row="4" Grid.Column="1" Text="." TextColor="black" Background="White"></Button>
+            <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="3" Text="=" TextColor="black" Background="White" Clicked="Result_Clicked"></Button>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
